@@ -75,7 +75,7 @@ async def astro(event):
                     )
 
                     # Send the formatted message
-                    await client.send_message('blackheadscc', formatted_message, link_preview=False)
+                    await client.send_message('PUBLI_CHANNEL_USERNAME', formatted_message, link_preview=False)
                     await asyncio.sleep(30)  # Wait for 30 seconds before sending the next message
     except Exception as e:
         print(e)
