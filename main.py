@@ -5,9 +5,9 @@ import re
 import aiohttp
 import asyncio
 
-api_id = 'API_ID_HERE'  # Replace with your api id
-api_hash = 'API_HASH_HERE'  # Replace with your api hash
-phone_number = '+12104578956'  # Replace with your phone number
+api_id = '1747534'  # Replace with your api id
+api_hash = '5a2684512006853f2e48aca9652d83ea'  # Replace with your api hash
+phone_number = '+12105468956'  # Replace with your phone number
 
 client = TelegramClient('black_scrapper', api_id, api_hash)
 
@@ -35,12 +35,12 @@ async def bin_lookup(bin_number):
 
 # Event handler for new messages
 @client.on(events.NewMessage)
-async def astro(event):
+async def anukarop(event):
     try:
         message = event.message
         # Regex to match approved messages
-        if re.search(r'(Approved!|Charged|authenticate_successful|𝗔𝗽𝗽𝗿𝗼𝘃𝗲𝗱|- 𝐀𝐩𝐩𝐫𝐨𝐯𝐞𝐝 ✅|APPROVED|New Cards Found By Scrapper|ꕥ Extrap [☭]|• New Cards Found By JennaS>            
-        filtered_card_info = filter_cards(message.text)
+        if re.search(r'(Approved!|Charged|authenticate_successful|𝗔𝗽𝗽𝗿𝗼𝘃𝗲𝗱|- 𝐀𝐩𝐩𝐫𝐨𝐯𝐞𝐝 ✅|APPROVED|New Cards Found By Scrapper|ꕥ Extrap [☭]|• New Cards Found By JennaS>)', message.text):
+            filtered_card_info = filter_cards(message.text)
             if not filtered_card_info:
                 return
 
@@ -64,18 +64,18 @@ async def astro(event):
                   
                     # Format the message
                     formatted_message = (
-                        f"**[-]**(t.me/blackheadsop) 𝐀𝐩𝐩𝐫𝐨𝐯𝐞𝐝 ✅\n\n"
+                        f"**[-]**(t.me/blackheadsop) 𝐀𝐩𝐩𝐫𝗼𝐯𝗲𝐝 ✅\n\n"
                         f"**[-]**(t.me/blackheadsop) 𝗖𝗮𝗿𝗱: `{card_info}`\n"
                         f"**[-]**(t.me/blackheadsop) 𝐆𝐚𝐭𝐞𝐰𝐚𝐲: Braintree Auth 4\n"
-                        f"**[-]**(t.me/blackheadsop) 𝐑𝐞𝐬𝐩𝐨𝐧𝐬𝐞: `1000: Approved`\n\n"
+                        f"**[-]**(t.me/blackheadsop) 𝐑𝐞𝐬𝗽𝗼𝐧𝐬𝗲: `1000: Approved`\n\n"
                         f"**[-]**(t.me/blackheadsop) 𝗜𝗻𝗳𝗼: {brand} - {card_type} - {level}\n"
                         f"**[-]**(t.me/blackheadsop) 𝐈𝐬𝐬𝐮𝐞𝐫: {bank}\n"
-                        f"**[-]**(t.me/blackheadsop) 𝐂𝐨𝐮𝐧𝐭𝐫𝐲: {country} {country_flag}\n\n"
+                        f"**[-]**(t.me/blackheadsop) 𝐂𝗼𝐮𝐧𝐭𝐫𝐲: {country} {country_flag}\n\n"
                         f"𝗧𝗶𝗺𝗲: {formatted_time_taken}"
                     )
 
                     # Send the formatted message
-                    await client.send_message('PUBLI_CHANNEL_USERNAME', formatted_message, link_preview=False)
+                    await client.send_message('scrappin', formatted_message, link_preview=False)
                     await asyncio.sleep(30)  # Wait for 30 seconds before sending the next message
     except Exception as e:
         print(e)
