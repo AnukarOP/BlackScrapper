@@ -39,7 +39,7 @@ phone_number = 'YOUR_PHONE_NUMBER'
 1. Start the bot:
 
 ```bash
-python3 main.py
+python3 main.py &
 ```
 
 2. The bot will automatically start scraping messages from the configured groups or channels and send the extracted information to your specified channel 24/7.
