@@ -11,7 +11,7 @@ phone_number = '+12104578956'  # Replace with your phone number
 
 client = TelegramClient('black_scrapper', api_id, api_hash)
 
-BIN_API_URL = 'https://astroboyapi.com/api/bin.php?bin={}'
+BIN_API_URL = 'https://bins.antipublic.cc/bins/{}'
 
 # Function to filter card information using regex
 def filter_cards(text):
