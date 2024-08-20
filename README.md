@@ -1,5 +1,5 @@
 
-# Telegram Credit Card Scraper Bot
+# Telegram CC Scraper Bot 🚀
 
 This Telegram bot is designed to scrape messages from different groups or channels and extract credit card information. The extracted data is then sent to a specified channel of your choice. This bot is intended for educational purposes only and should not be used for any illegal activities.
 
@@ -16,8 +16,8 @@ This Telegram bot is designed to scrape messages from different groups or channe
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/your-repository/telegram-card-scraper-bot.git
-cd telegram-card-scraper-bot
+git clone https://github.com/AnukarOP/BlackScrapper
+cd BlackScrapper
 ```
 
 2. Install the required Python libraries:
@@ -39,10 +39,10 @@ phone_number = 'YOUR_PHONE_NUMBER'
 1. Start the bot:
 
 ```bash
-python main.py
+python3 main.py
 ```
 
-2. The bot will automatically start scraping messages from the configured groups or channels and send the extracted information to your specified channel.
+2. The bot will automatically start scraping messages from the configured groups or channels and send the extracted information to your specified channel 24/7.
 
 ## Disclaimer
 
@@ -51,3 +51,9 @@ This bot is meant for educational purposes only. The use of this bot for illegal
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+<p align="center">
+  <a href="https://github.com/AnukarOP" target="_blank">
+    <img src="https://img.shields.io/badge/Made%20with%20%E2%9D%A4%20by-AnukarOP-%23FF0000.svg" alt="Made with love by AnukarOP"/>
+  </a>
+</p>
