@@ -4,10 +4,12 @@ from telethon import TelegramClient, events
 import re
 import aiohttp
 import asyncio
+from dotenv import dotenv_values
 
-api_id = '1747534'  # Replace with your api id
-api_hash = '5a2684512006853f2e48aca9652d83ea'  # Replace with your api hash
-phone_number = '+12105468956'  # Replace with your phone number
+env = dotenv_values(".env")
+api_id = env['api_id']
+api_hash = env['api_hash']
+phone_number = env['phone_number']
 
 client = TelegramClient('black_scrapper', api_id, api_hash)
 
