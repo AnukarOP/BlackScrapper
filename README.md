@@ -26,12 +26,16 @@ cd BlackScrapper
 pip install -r requirements.txt
 ```
 
-3. Replace the placeholder values in `main.py` with your actual Telegram API credentials:
+3. Open the `.env.example` file in your preferred text editor:
 
-```python
-api_id = 'YOUR_API_ID'
-api_hash = 'YOUR_API_HASH'
-phone_number = 'YOUR_PHONE_NUMBER'
+```bash
+nano .env.example
+```
+
+4. Replace the placeholder values with your actual `api_id`, `api_hash`, and `phone_number`. Once you're done, save the file (**Ctrl + O** in nano, then **Enter**) and Rename the file to `.env`:
+
+```bash
+mv .env.example .env
 ```
 
 ## Usage
